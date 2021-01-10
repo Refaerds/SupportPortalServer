@@ -37,4 +37,4 @@ app.get('/getfaqs', (req, res) => {getFAQs.getFAQs(req, res, db)})
 
 app.put('/submitticket', (req, res) => {submitTicket.handleTicketSubmit(req, res, db)})
 
-app.listen(3000, () => {console.log("listening on port 3000")});
+app.listen(process.env.PORT || 3000, () => {console.log(`listening on port ${process.env.PORT}`)});
