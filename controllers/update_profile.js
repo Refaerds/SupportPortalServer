@@ -1,5 +1,5 @@
-const CustomError = require("../customError");
-const val = require('../validations');
+const CustomError = require("../utils/customError");
+const val = require('../utils/validations');
     
 const handleUpdate = (req, res, db, bcrypt) => {
     let { old_data, new_data } = req.body;

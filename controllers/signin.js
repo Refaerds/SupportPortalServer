@@ -1,5 +1,5 @@
-const CustomError = require("../customError");
-const val = require('../validations');
+const CustomError = require("../utils/customError");
+const val = require('../utils/validations');
 
 const handleSignin = (req, res, db, bcrypt) => {
     let { email, pwd } = req.body;

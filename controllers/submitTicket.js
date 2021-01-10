@@ -1,4 +1,4 @@
-const val = require('../validations');
+const val = require('../utils/validations');
 
 const handleTicketSubmit = (req, res, db) => {
     let { name, email, issue, description } = req.body;
